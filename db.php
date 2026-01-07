@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$dbname = "student_portal";
-$user = "root";
-$pass = "";
+$dbname = "np03cs4a240297";
+$user = "np03cs4a240297";
+$pass = "Q57i3rHBX9";
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
