@@ -11,15 +11,18 @@ $theme = $_COOKIE['theme'] ?? 'light';
 
 <!DOCTYPE html>
 <html>
-<body style="
-background-color: <?php echo ($theme == 'dark') ? 'black' : 'white'; ?>;
-color: <?php echo ($theme == 'dark') ? 'white' : 'black'; ?>
-">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<h2>Welcome, <?php echo $_SESSION['name']; ?></h2>
+<body class="<?php echo $theme; ?>">
 
-<a href="preference.php">Change Theme</a><br><br>
-<a href="logout.php">Logout</a>
+<div class="container">
+    <h2>Welcome, <?php echo $_SESSION['name']; ?></h2>
+
+    <a href="preference.php">Change Theme</a><br><br>
+    <a href="logout.php">Logout</a>
+</div>
 
 </body>
 </html>
